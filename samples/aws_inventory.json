@@ -1,0 +1,7 @@
+{"provider":"aws","resources":[
+  {"provider":"aws","id":"s3://customer-exports","type":"storage","public":true,"encrypted":false,"tags":{}},
+  {"provider":"aws","id":"sg-012345","type":"network_rule","source":"0.0.0.0/0","ports":[22,443],"tags":{"owner":"platform"}},
+  {"provider":"aws","id":"iam/admin-user","type":"identity","privileged":true,"mfa":false,"tags":{"owner":"security"}},
+  {"provider":"aws","id":"cloudtrail/account","type":"audit","enabled":false,"tags":{"owner":"security"}},
+  {"provider":"aws","id":"rds/customer-db","type":"database","public":true,"encrypted":true,"backup":false,"tags":{"owner":"data"}}
+]}
