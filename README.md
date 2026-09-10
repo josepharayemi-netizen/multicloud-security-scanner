@@ -2,6 +2,8 @@
 
 A defensive security portfolio project that assesses AWS and Microsoft Azure resource inventories, ranks findings by severity, maps controls to common frameworks, and produces actionable JSON and HTML reports.
 
+![Security compliance report demonstration](docs/demo.svg)
+
 > This scanner is read-only by design. It identifies configuration risk but never changes cloud resources.
 
 ## Business problem
