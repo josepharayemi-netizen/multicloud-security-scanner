@@ -1,0 +1,7 @@
+{"provider":"azure","resources":[
+  {"provider":"azure","id":"storage/publicexports","type":"storage","public":true,"encrypted":true,"tags":{"owner":"data"}},
+  {"provider":"azure","id":"nsg/admin-access","type":"network_rule","source":"::/0","ports":[3389],"tags":{}},
+  {"provider":"azure","id":"entra/global-admin","type":"identity","privileged":true,"mfa":false,"tags":{"owner":"identity"}},
+  {"provider":"azure","id":"activity-log/export","type":"audit","enabled":true,"tags":{"owner":"security"}},
+  {"provider":"azure","id":"sql/orders","type":"database","public":false,"encrypted":true,"backup":true,"tags":{"owner":"data"}}
+]}
